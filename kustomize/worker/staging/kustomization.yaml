@@ -7,7 +7,7 @@ patchesStrategicMerge:
 namespace: instavote
 replicas:
 - name: worker
-  count: 4
+  count: 2
 images:
 - name: xvag/instavote-worker
   newName: xvag/worker
