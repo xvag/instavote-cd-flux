@@ -1,0 +1,11 @@
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  name: github-instavote
+  namespace: flux-system
+spec:
+  address: https://github.com/xvag/instavote
+  secretRef:
+    name: github-token
+  type: github

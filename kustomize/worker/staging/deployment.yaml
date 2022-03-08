@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: worker
+  name: worker
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - image: xvag/instavote-worker:v9
+        name: worker
