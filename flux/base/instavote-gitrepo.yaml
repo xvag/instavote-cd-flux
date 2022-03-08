@@ -12,4 +12,4 @@ spec:
   secretRef:
     name: github-instavote
   timeout: 1m0s
-  url: https://github.com/xvag/instavote.git
+  url: https://github.com/xvag/instavote-deploy.git
