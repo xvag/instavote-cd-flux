@@ -5,6 +5,12 @@ metadata:
   namespace: instavote
 spec:
   analysis:
-    interval: 30s
-    threshold: 3
-    iterations: 5
+     interval: 10s
+     threshold: 10
+     maxWeight: 50
+     stepWeight: 5
+# Blue/Green
+# analysis:
+#    interval: 30s
+#    threshold: 3
+#    iterations: 5
