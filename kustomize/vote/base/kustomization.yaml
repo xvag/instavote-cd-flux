@@ -6,4 +6,3 @@ resources:
 - hpa.yaml
 - ingress.yaml
 - canary.yaml
-- ingress2.yaml
