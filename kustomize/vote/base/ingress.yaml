@@ -10,7 +10,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: vote.instavote.lab
+  - host: vote.example.com
     http:
       paths:
       - path: /
