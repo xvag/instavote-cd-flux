@@ -4,6 +4,7 @@ resources:
 - ../base
 patchesStrategicMerge:
 - deployment.yaml
+- canary.yaml
 namespace: instavote
 replicas:
 - name: vote
