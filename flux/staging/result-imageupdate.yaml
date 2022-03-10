@@ -21,7 +21,7 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: instavote
+    name: instavote-deploy
   update:
     path: ./helm/charts/result
     strategy: Setters

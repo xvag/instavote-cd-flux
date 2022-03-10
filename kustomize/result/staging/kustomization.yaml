@@ -13,5 +13,5 @@ replicas:
 
 images:
 - name: xvag/instavote-vote
-#  newName: xvag/vote
-  newTag: latest
+  newName: xvag/vote
+  newTag: main-35e2983b-1646415577

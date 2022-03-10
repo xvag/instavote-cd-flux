@@ -2,7 +2,7 @@
 apiVersion: notification.toolkit.fluxcd.io/v1beta1
 kind: Provider
 metadata:
-  name: github-instavote
+  name: github-instavote-deploy
   namespace: flux-system
 spec:
   address: https://github.com/xvag/instavote-deploy

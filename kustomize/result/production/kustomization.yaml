@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../base
+patchesStrategicMerge:
+- deployment.yaml
+
+namespace: instavote
+
+replicas:
+- name: result
+  count: 2
+
+images:
+- name: xvag/instavote-result
+#  newName: xvag/vote
+  newTag: latest

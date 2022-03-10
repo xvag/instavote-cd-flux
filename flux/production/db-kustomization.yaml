@@ -1,0 +1,19 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: db-prod
+  namespace: flux-system
+spec:
+  healthChecks:
+  - kind: Deployment
+    name: db
+    namespace: instavote
+  interval: 1m0s
+  path: ./kustomize/db/production
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: instavote-deploy
+  targetNamespace: instavote
+  timeout: 2m0s

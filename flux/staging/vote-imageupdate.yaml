@@ -4,7 +4,7 @@ kind: ImageUpdateAutomation
 metadata:
   annotations:
     reconcile.fluxcd.io/requestedAt: "2022-03-04T20:03:41.541715201+02:00"
-  name: worker
+  name: vote
   namespace: flux-system
 spec:
   git:
@@ -21,7 +21,7 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: instavote
+    name: instavote-deploy
   update:
-    path: ./kustomize/worker/staging
+    path: ./kustomize/vote/staging
     strategy: Setters

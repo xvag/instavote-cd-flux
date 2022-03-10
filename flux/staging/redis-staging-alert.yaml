@@ -2,13 +2,12 @@
 apiVersion: notification.toolkit.fluxcd.io/v1beta1
 kind: Alert
 metadata:
-  name: vote-staging
+  name: redis-staging
   namespace: flux-system
 spec:
   eventSeverity: info
   eventSources:
   - kind: Kustomization
-    name: vote-staging
+    name: redis-staging
   providerRef:
-    name: github-instavote
-
+    name: github-instavote-deploy

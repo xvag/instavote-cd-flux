@@ -7,9 +7,9 @@ metadata:
 spec:
   chart:
     spec:
-      chart: ./helm/charts/result
+      chart: ./helm/charts/result/staging
       sourceRef:
         kind: GitRepository
-        name: instavote
-  interval: 30s
+        name: instavote-deploy
+  interval: 1m0s
   targetNamespace: instavote
