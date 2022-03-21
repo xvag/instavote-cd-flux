@@ -18,7 +18,7 @@ spec:
         app: result
     spec:
       containers:
-      - image: xvag/result
+      - image: xvag/instavote-result
         name: result
         resources: {}
 status: {}

@@ -18,7 +18,7 @@ spec:
         app: worker
     spec:
       containers:
-      - image: xvag/worker
+      - image: xvag/instavote-worker
         name: worker
         resources: {}
 status: {}
