@@ -3,24 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: vote
-  name: vote
+    app: worker
+  name: worker
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vote
+      app: worker
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: vote
+        app: worker
     spec:
       containers:
-      - image: xvag/vote
-        name: vote
-        ports:
-        - containerPort: 80
+      - image: xvag/worker
+        name: worker
         resources: {}
 status: {}

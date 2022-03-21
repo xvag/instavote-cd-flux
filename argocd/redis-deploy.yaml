@@ -3,24 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: vote
-  name: vote
+    app: redis
+  name: redis
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vote
+      app: redis
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: vote
+        app: redis
     spec:
       containers:
-      - image: xvag/vote
-        name: vote
-        ports:
-        - containerPort: 80
+      - image: redis:alpine
+        name: redis
         resources: {}
 status: {}
